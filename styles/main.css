@@ -1,0 +1,114 @@
+
+ :root{
+    --main-color: #1C1C1C;
+ }
+
+
+ /* .width-945 {
+    max-width: 945px;
+} */
+
+.main-color{
+    color:var(--main-color)
+}
+/******** fonts *******/
+.montserrat{
+    font-family: "Montserrat", sans-serif ;
+
+}
+
+.poppins{
+    font-family: "Poppins", serif;
+}
+.fw-200 {
+    font-weight: 200;
+}
+.fw-800 {
+    font-weight: 800;
+}
+ .fs-50{
+    font-size: 50px;
+ }
+
+ .fs-60{
+    font-size:60px;
+ }
+ .lh-72{
+    line-height: 72px;
+ }
+
+ .custom-padding-100 {
+    padding: 100px;
+}
+ section{
+    margin: 50px 0;
+ }
+/******** Navbar *******/
+
+/* .bg-light {
+    background-color: rgba(1,1,1,1)
+}
+/* .nav-default{
+    background-color: rgba(0, 0, 0, 0) !important;
+} */ 
+ .navbar .nav-link{
+    position: relative;
+ }
+.navbar .nav-link::after{
+    content: "";
+    background-color: var(--main-color);
+    width:0;
+    height:3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+.navbar .nav-link:hover::after{
+    width: 100%;
+}
+
+.navbar .nav-link{
+    margin: 10px;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0 ;
+    border-right: 0;
+    border-bottom: 0;
+    border-left:0;
+}
+
+/******** header *******/
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/******** About *******/
+
+#about h3{
+    font-size:30px;
+    line-height: 33px;
+
+}
+
+.sub-title{
+    font-size:14px;
+    line-height: 20px;
+    color:#999;;
+
+}
+
+#about p{
+    font-size:15px;
+    line-height: 24px;  
+    color:#748182;
+}

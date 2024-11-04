@@ -23,6 +23,9 @@
 .fw-200 {
     font-weight: 200;
 }
+.fw-500 {
+    font-weight: 500;
+}
 .fw-800 {
     font-weight: 800;
 }
@@ -43,6 +46,17 @@
  section{
     margin: 50px 0;
  }
+ .mb-5px {
+    margin-bottom: 5px;
+}
+
+.mb-20px {
+    margin-bottom: 20px;
+}
+/* 
+.mb-30px {
+    margin-bottom: 30px;
+} */
 /******** Navbar *******/
 
 /* .bg-light {
@@ -103,7 +117,8 @@ header{
 .sub-title{
     font-size:14px;
     line-height: 20px;
-    color:#999;;
+    color:#999;
+    letter-spacing: 2px;
 
 }
 
@@ -112,3 +127,103 @@ header{
     line-height: 24px;  
     color:#748182;
 }
+.img-about{
+    position: relative;
+    padding: 0 0 0 30px;
+
+}
+.img-about::after {
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url('../imgs/dots.png'); 
+    background-repeat: repeat;
+    background-position: center;
+    z-index: -1; 
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.skills .item{
+    margin-top: 30px;
+ } 
+ 
+.progress-bar {
+    background-color: var(--main-color);
+}
+/* 
+/* .skills .skills-progress{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    position: relative;
+}
+
+.skills .item span {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    display: inline-block;
+}
+    */
+/* .skills .item h6{
+    font-size: 13px;
+    color: #fff;
+} 
+.skills .item .skills-progress{
+width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    position: relative;
+} */ 
+
+.skill-progress {
+    background-color: #e0e0e0; /* Light grey background */
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Keep rounded corners for inner progress bar */
+    margin-bottom: 20px; /* Space between progress bars */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
+    height: 20px; /* Increase height for thicker bars */
+  }
+  
+  .progress-bar {
+    background-color: #333; /* Dark color for the progress */
+    color: #fff; /* White text color for visibility */
+    font-weight: 500;
+    text-align: right; /* Align text to the right */
+    padding: 0 10px; /* Padding for text on both sides */
+    border-radius: 20px; /* Smooth transition for filled portion */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Full height within the progress container */
+  }
+  
+  .progress-bar span h6 {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .skills h6 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
